@@ -1,0 +1,14 @@
+<div class = "main" style="text-align:center">
+      <h1>Grocery List</h1>
+      <div class = "additem">
+        <input (ngModel) = "newItem" placeholder="Add Item" class="addText">
+        <button (click) = "pusItem()">Add item to list</button>
+      </div>
+    
+      <ul>
+        <li *ngFor = "let i of items">
+          {{i}}
+          <button><span> Remove item </span></button>
+        </li>
+      </ul>
+</div>
